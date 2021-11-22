@@ -1,17 +1,71 @@
-import Instalogo from '../assets/Instagram_logo.svg'
 import Image from 'next/image'
+import {
+	AiOutlineSearch,
+	AiOutlineHome,
+	AiOutlinePlusCircle,
+	AiOutlineCompass,
+	AiOutlineHeart,
+	AiOutlineMenu
+} from 'react-icons/ai'
+import { BsInstagram } from 'react-icons/bs'
+import { FaRegPaperPlane } from 'react-icons/fa'
+import Instalogo from '../assets/Instagram_logo.svg'
 
 const Header = () => {
 	return (
-		<div className='flex h-12 w-full items-center border-b-2 border-gray-200'>
-			{/* Instagram Logo */}
+		<nav className='h-16 w-full border-b-2 border-gray-200 '>
+			<div className='h-full w-full flex items-center justify-between lg:w-9/12 lg:mx-auto'>
+				<div className='relative hidden h-full w-28 lg:flex'>
+					<Image
+						src={Instalogo}
+						alt='Instagram Logo'
+						layout='fill'
+						objectFit='contain'
+					/>
+				</div>
 
-			<Image src={Instalogo} alt='Instagram Logo' className='h-full' />
+				<div className='relative h-full w-28 lg:hidden'>
+					<BsInstagram className='h-full py-2 w-11/12 my-auto' />
+				</div>
 
-			{/* Caixa de pesquisa */}
+				<div className='flex items-center my-auto rounded h-1/2 w-44 border-2 border-gray-300'>
+					<div className='mx-1'>
+						<AiOutlineSearch className='h-5 w-5 text-gray-400' />
+					</div>
+					<input
+						className='w-full outline-none'
+						type='text'
+						placeholder='Search'
+					/>
+				</div>
 
-			{/* Icones Links */}
-		</div>
+				<div className='h-full w-52 hidden items-center justify-around lg:flex '>
+					<div className='iconsDiv'>
+						<AiOutlineHome className='headerLinks' />
+					</div>
+					<div className='iconsDiv'>
+						<span className='iconWarning'>3</span>
+						<FaRegPaperPlane className='headerLinks' />
+					</div>
+					<div className='iconsDiv'>
+						<AiOutlinePlusCircle className='headerLinks' />
+					</div>
+					<div className='iconsDiv'>
+						<AiOutlineCompass className='headerLinks' />
+					</div>
+					<div className='iconsDiv'>
+						<AiOutlineHeart className='headerLinks' />
+					</div>
+					<div className='iconsDiv'>
+						<Image src='https://github.com/MSpilari.png' alt='User Image' />
+					</div>
+				</div>
+
+				<div className='h-full w-30 flex items-center justify-center mr-2 lg:hidden'>
+					<AiOutlineMenu className='h-6 w-full cursor-pointer' />
+				</div>
+			</div>
+		</nav>
 	)
 }
 
