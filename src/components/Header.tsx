@@ -56,8 +56,13 @@ const Header = () => {
 					<div className='iconsDiv'>
 						<AiOutlineHeart className='headerLinks' />
 					</div>
-					<div className='iconsDiv'>
-						<Image src='https://github.com/MSpilari.png' alt='User Image' />
+					<div className='relative h-10 w-10 rounded-full overflow-hidden'>
+						<Image
+							src='https://github.com/MSpilari.png'
+							alt='User Image'
+							layout='fill'
+							objectFit='contain'
+						/>
 					</div>
 				</div>
 
