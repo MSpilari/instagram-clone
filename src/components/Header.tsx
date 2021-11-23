@@ -24,7 +24,7 @@ const Header = () => {
 					/>
 				</div>
 
-				<div className='relative h-full w-28 lg:hidden'>
+				<div className='relative h-full w-20 lg:hidden'>
 					<BsInstagram className='h-full py-2 w-11/12 my-auto' />
 				</div>
 
