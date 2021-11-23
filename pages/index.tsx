@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Header } from '../src/components/Header'
+import { Stories } from '../src/components/Stories'
 
 const Home: NextPage = () => {
 	return (
@@ -11,6 +12,12 @@ const Home: NextPage = () => {
 			</Head>
 			<main>
 				<Header />
+				<div className='grid grid-cols-2 lg:grid-cols-3 items-center'>
+					<Stories />
+					{/* <Feed /> */}
+					{/* Mini Profile */}
+					{/* Sugestões */}
+				</div>
 			</main>
 		</div>
 	)
