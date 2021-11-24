@@ -21,6 +21,8 @@ const Header = () => {
 						alt='Instagram Logo'
 						layout='fill'
 						objectFit='contain'
+						sizes='50vw'
+						priority
 					/>
 				</div>
 
