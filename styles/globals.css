@@ -19,3 +19,9 @@
 .iconWarning {
 	@apply absolute top-1 -right-1 h-6 w-6 bg-red-500 text-center rounded-full text-white transform animate-pulse;
 }
+
+@layer utilities {
+	.scroll-smooth {
+		scroll-behavior: smooth;
+	}
+}
