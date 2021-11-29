@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Header } from '../src/components/Header'
 import { Stories } from '../src/components/Stories'
 import { MiniProfile } from '../src/components/MiniProfile'
+import { Feed } from '../src/components/Feed'
 
 const Home: NextPage = () => {
 	return (
@@ -13,11 +14,10 @@ const Home: NextPage = () => {
 			</Head>
 			<main>
 				<Header />
-				<div className='grid grid-cols-2 lg:grid-cols-3 items-center'>
+				<div className='grid grid-cols-2 grid-rows-1 lg:grid-cols-3 items-center'>
 					<Stories />
+					<Feed />
 					<MiniProfile />
-					{/* <Feed /> */}
-					{/* Sugestões */}
 				</div>
 			</main>
 		</div>
