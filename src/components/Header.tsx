@@ -13,7 +13,7 @@ import Instalogo from '../assets/Instagram_logo.svg'
 
 const Header = () => {
 	return (
-		<nav className='h-16 w-full border-b-2 border-gray-200 '>
+		<header className='h-16 w-full border-b-2 border-gray-200 '>
 			<div className='h-full w-full flex items-center justify-between lg:w-9/12 lg:mx-auto'>
 				<div className='relative hidden h-full w-28 lg:flex'>
 					<Image
@@ -41,7 +41,7 @@ const Header = () => {
 					/>
 				</div>
 
-				<div className='h-full w-52 hidden items-center justify-around lg:flex '>
+				<nav className='h-full w-52 hidden items-center justify-around lg:flex '>
 					<div className='iconsDiv'>
 						<AiOutlineHome className='headerLinks' />
 					</div>
@@ -66,13 +66,13 @@ const Header = () => {
 							objectFit='contain'
 						/>
 					</div>
-				</div>
+				</nav>
 
 				<div className='h-full w-30 flex items-center justify-center mr-2 lg:hidden'>
 					<AiOutlineMenu className='h-6 w-full cursor-pointer' />
 				</div>
 			</div>
-		</nav>
+		</header>
 	)
 }
 
