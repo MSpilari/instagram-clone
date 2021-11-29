@@ -41,7 +41,7 @@ const Stories = () => {
 	}, [])
 
 	return (
-		<section className='flex relative items-center col-span-2 border-2 border-gray-200 m-2  space-x-2 rounded-sm lg:w-10/12 lg:ml-auto lg:mr-5 lg:max-w-2xl'>
+		<section className='flex relative items-center self-start row-start-1 col-start-1 col-span-2 border-2 border-gray-200 m-2  space-x-2 rounded-sm lg:w-10/12 lg:ml-auto lg:mr-5 lg:max-w-2xl'>
 			<FaChevronCircleLeft
 				className='absolute top-1/3 w-6 h-6 text-gray-300 cursor-pointer z-10 hover:scale-110 ease-out hover:text-gray-400'
 				onClick={() => scroll(contentWrapper.current, 'left')}
