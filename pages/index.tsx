@@ -14,10 +14,10 @@ const Home: NextPage = () => {
 			</Head>
 			<main>
 				<Header />
-				<div className='grid grid-cols-2 grid-rows-1 lg:grid-cols-3 items-center'>
+				<div className='grid relative grid-cols-2 grid-rows-1 lg:grid-cols-3 lg:grid-rows-2 items-center'>
 					<Stories />
-					<Feed />
 					<MiniProfile />
+					<Feed />
 				</div>
 			</main>
 		</div>
