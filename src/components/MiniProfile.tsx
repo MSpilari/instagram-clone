@@ -33,7 +33,7 @@ const MiniProfile = () => {
 	}, [])
 
 	return (
-		<aside className='hidden flex-col row-start-1 grid-cols-1 col-start-3 w-3/5 justify-center my-5 max-w-lg min-w-max lg:flex '>
+		<aside className='hidden flex-col row-start-1 self-start row-end-2 grid-cols-1 col-start-3 w-3/5 justify-center my-5 min-w-max lg:flex sticky top-20'>
 			<div className='flex items-center'>
 				<div className='flex items-center justify-center relative w-16 h-16 rounded-full overflow-hidden mr-2'>
 					<Image
