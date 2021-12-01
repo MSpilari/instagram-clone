@@ -1,28 +1,30 @@
 {
-  "name": "instagram-clone",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "axios": "^0.24.0",
-    "next": "12.0.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
-  },
-  "devDependencies": {
-    "@types/faker": "^5.5.9",
-    "@types/node": "16.11.9",
-    "@types/react": "17.0.35",
-    "autoprefixer": "^10.4.0",
-    "eslint": "7",
-    "eslint-config-next": "12.0.4",
-    "postcss": "^8.3.11",
-    "tailwindcss": "^2.2.19",
-    "typescript": "4.5.2"
-  }
+	"name": "instagram-clone",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"axios": "^0.24.0",
+		"firebase": "^9.5.0",
+		"next": "12.0.4",
+		"next-auth": "4.0.0-beta.7",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-icons": "^4.3.1"
+	},
+	"devDependencies": {
+		"@types/faker": "^5.5.9",
+		"@types/node": "16.11.9",
+		"@types/react": "17.0.35",
+		"autoprefixer": "^10.4.0",
+		"eslint": "7",
+		"eslint-config-next": "12.0.4",
+		"postcss": "^8.3.11",
+		"tailwindcss": "^2.2.19",
+		"typescript": "4.5.2"
+	}
 }
