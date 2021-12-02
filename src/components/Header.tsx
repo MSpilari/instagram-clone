@@ -1,3 +1,4 @@
+import { useSession } from 'next-auth/react'
 import Image from 'next/image'
 import {
 	AiOutlineSearch,
@@ -12,6 +13,8 @@ import { FaRegPaperPlane } from 'react-icons/fa'
 import Instalogo from '../assets/Instagram_logo.svg'
 
 const Header = () => {
+	const { data: session } = useSession()
+
 	return (
 		<header className='h-16 w-full border-b-2 border-gray-200 bg-white z-20 sticky top-0'>
 			<div className='h-full w-full flex items-center justify-between lg:w-9/12 lg:mx-auto'>
