@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
+import { useSession } from 'next-auth/react'
 import { FaChevronCircleRight, FaChevronCircleLeft } from 'react-icons/fa'
 import { api } from '../services/api'
 import { Story } from './Story'
@@ -18,6 +19,7 @@ interface IResponse {
 
 const Stories = () => {
 	const [stories, setStories] = useState([] as IStories[])
+	const { data: session } = useSession()
 
 	const contentWrapper = useRef(null)
 
@@ -39,7 +41,6 @@ const Stories = () => {
 					sessionStorage.setItem('stories', JSON.stringify(results))
 			  })
 	}, [])
-
 	return (
 		<section className='flex relative items-center self-start row-start-1 col-start-1 col-span-2 border-2 border-gray-200 m-2  space-x-2 rounded-sm lg:w-10/12 lg:ml-auto lg:mr-5 lg:max-w-2xl'>
 			<FaChevronCircleLeft
@@ -50,6 +51,13 @@ const Stories = () => {
 				ref={contentWrapper}
 				className='flex relative items-center overflow-x-hidden scroll-smooth'
 			>
+				{session && (
+					<Story
+						key={session.user.uid}
+						avatar={session.user.image}
+						username={session.user.username}
+					/>
+				)}
 				{stories.map((story, index) => (
 					<Story
 						key={index}
