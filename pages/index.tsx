@@ -4,6 +4,7 @@ import { Header } from '../src/components/Header'
 import { Stories } from '../src/components/Stories'
 import { MiniProfile } from '../src/components/MiniProfile'
 import { Feed } from '../src/components/Feed'
+import { Modal } from '../src/components/Modal'
 
 const Home: NextPage = () => {
 	return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 					<MiniProfile />
 					<Feed />
 				</div>
+				<Modal />
 			</main>
 		</div>
 	)
