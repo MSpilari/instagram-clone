@@ -1,5 +1,18 @@
 # Instagram Clone
 
+[![GitHub license](https://img.shields.io/github/license/MSpilari/instagram-clone)](https://github.com/MSpilari/instagram-clone/blob/master/LICENSE)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/react)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/next)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/next-auth)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/react-icons)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/firebase)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/recoil)
+
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/dev/tailwindcss)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/MSpilari/instagram-clone/dev/typescript)
+
+![image](./src/assets/Instagram_logo.svg)
+
 ## Objectives
 
 - Simulate some of functionalities of Instagram.
@@ -17,6 +30,16 @@
   - Run `yarn build or npm run build` to run the build server.
 
 - _Remember that this project uses Next_
+
+## Firebase Configs
+
+- Remember to access the [Google Cloud](https://cloud.google.com).
+
+- Select the project you are working.
+
+- Go to **Menu** > **APIs and services** > **Credentials**
+
+- At the OAuth 2.0 section, insert the **Authorized Javascript Origins** and **Authorized redirects URIs**.
 
 ## Technologies
 
