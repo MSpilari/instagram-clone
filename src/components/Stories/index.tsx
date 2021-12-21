@@ -59,7 +59,7 @@ const Stories = () => {
 				{session && (
 					<Story
 						key={session.user.uid}
-						avatar={session.user.image}
+						avatar={session.user.image || ''}
 						username={session.user.username}
 					/>
 				)}
