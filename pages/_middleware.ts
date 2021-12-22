@@ -1,17 +1,20 @@
-import { getToken } from 'next-auth/jwt'
 import { NextApiRequest } from 'next'
-import { NextResponse } from 'next/server'
+import { getToken } from 'next-auth/jwt'
+import { NextRequest, NextResponse } from 'next/server'
 
-export default async function middleware(req: NextApiRequest) {
+export default async function middleware(req: NextRequest & NextApiRequest) {
 	const token = await getToken({
 		req,
 		secret: process.env.NEXT_AUTH_SECRET || ''
 	})
 
-	if (req.url === '/' && !token) {
+	const { pathname } = req.nextUrl
+
+	if (pathname === '/' && !token) {
 		return NextResponse.redirect('/auth/signin')
-	}
-	if (req.url === '/' && token) {
+	} else if (pathname === '/' && token) {
+		return NextResponse.next()
+	} else if (pathname === '/auth/signin' && token) {
 		return NextResponse.next()
 	}
 }
